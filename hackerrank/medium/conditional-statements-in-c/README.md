@@ -68,7 +68,7 @@ If $1 \le n \le 9$, then print the lowercase English word corresponding to the n
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-06T18:46:46.822Z  
+**Submitted:** 2026-10-06T19:08:36.912Z  
 
 ```c
 #include <assert.h>
@@ -94,7 +94,7 @@ int main()
     if (n_endptr == n_str || *n_endptr != '\0') { exit(EXIT_FAILURE); }
 
     // Write Your Code Here
-        switch(n)
+switch(n)
     {
         case 1:printf("one");
         break;
@@ -116,7 +116,6 @@ int main()
         break;
         default:printf("Greater than 9");    
     }
-
     return 0;
 }
 
@@ -125,7 +124,7 @@ char* readline() {
     size_t data_length = 0;
     char* data = malloc(alloc_length);
 
-    while (true) {
+    while(true) {
         char* cursor = data + data_length;
         char* line = fgets(cursor, alloc_length - data_length, stdin);
 
